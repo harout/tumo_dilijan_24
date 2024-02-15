@@ -141,12 +141,22 @@ void acceptCommands()
     }
     else if (command.equals("r"))
     {
+      rectMode(CORNER);
       int x = Integer.parseInt(tokens.pop());
       int y = Integer.parseInt(tokens.pop());
       int w = Integer.parseInt(tokens.pop());
       int h = Integer.parseInt(tokens.pop());
       rect(x, y, w, h);
     }
+    else if (command.equals("cr"))
+    {
+      rectMode(CENTER);
+      int x = Integer.parseInt(tokens.pop());
+      int y = Integer.parseInt(tokens.pop());
+      int w = Integer.parseInt(tokens.pop());
+      int h = Integer.parseInt(tokens.pop());
+      rect(x, y, w, h);
+    }    
     else if (command.equals("t"))
     {
       int x1 = Integer.parseInt(tokens.pop());
