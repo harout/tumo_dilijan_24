@@ -1,0 +1,7 @@
+{
+    "freq": 912,
+    "bandwidth": 500,
+    "spreading_factor": 9,
+    "coding_rate": 8,
+    "power": 22
+}
